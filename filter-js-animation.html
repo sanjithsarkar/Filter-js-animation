@@ -2,180 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        /* Add any additional styles here */
-        .conference-details {
-          margin-bottom: 10px;
-        }
-      </style>
-    
+  <style>
+    /* Add any additional styles here */
+    .conference-details {
+      margin-bottom: 10px;
+    }
+  </style>
+
 </head>
 
 <body>
 
-    <div class="container mt-4">
+  <div class="container mt-4">
 
-        <div class="container">
-            <h1 class="mt-4">Tech Conferences</h1>
-            
-            <div class="filter mt-3">
-              <h2 class="visually-hidden">Filter by type of conference</h2>
-              <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
-              <button class="btn btn-primary filter-btn" data-filter="frontend">Frontend</button>
-              <button class="btn btn-primary filter-btn" data-filter="backend">Backend</button>
-              <button class="btn btn-primary filter-btn" data-filter="fullstack">Fullstack</button>
-            </div>
+    <div class="container">
+      <h1 class="mt-4">Tech Conferences</h1>
 
-            <div class="container mt-4">
-                <h1 class="mb-4">Tech Conferences</h1>
-                
-                <ul class="list-group conference-list">
-              
-                  <li class="list-group-item conference" data-category="fullstack">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">January 30th - February 1st</span>
-                        <span class="badge bg-primary">Fullstack</span>
-                      </div>
-                      <h2 class="conference-name">THAT Conference Texas</h2>
-                    </div>
-                  </li>
-              
-                  <li class="list-group-item conference" data-category="fullstack">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">February 29th - March 1st</span>
-                        <span class="badge bg-primary">Fullstack</span>
-                      </div>
-                      <h2 class="conference-name">DEVWorld</h2>
-                    </div>
-                  </li>
-              
-                  <li class="list-group-item conference" data-category="backend">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">March 19th - March 23rd</span>
-                        <span class="badge bg-primary">Backend</span>
-                      </div>
-                      <h2 class="conference-name">SQLBits</h2>
-                    </div>
-                  </li>
-              
-                  <li class="list-group-item conference" data-category="frontend">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">June 6th - June 7th</span>
-                        <span class="badge bg-primary">Frontend</span>
-                      </div>
-                      <h2 class="conference-name">CSS Day</h2>
-                    </div>
-                  </li>
-              
-                  <li class="list-group-item conference" data-category="frontend">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">September 9th - September 11th</span>
-                        <span class="badge bg-primary">Frontend</span>
-                      </div>
-                      <h2 class="conference-name">SmashingConf Freiburg</h2>
-                    </div>
-                  </li>
-                  
-                  <!-- =====================================================          ================================================== -->
+      <div class="filter mt-3">
+        <h2 class="visually-hidden">Filter by type of conference</h2>
+        <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-primary filter-btn" data-filter="frontend">Frontend</button>
+        <button class="btn btn-primary filter-btn" data-filter="backend">Backend</button>
+        <button class="btn btn-primary filter-btn" data-filter="fullstack">Fullstack</button>
+      </div>
 
-                  <ul class="list-group conference-list">
-                    <li class="list-group-item conference" data-category="fullstack">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">January 30th - February 1st</span>
-                        <span class="badge bg-primary">Fullstack</span>
-                      </div>
-                      <h2 class="conference-name">THAT Conference Texas</h2>
-                    </li>
-                
-                    <li class="list-group-item conference" data-category="fullstack">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">February 29th - March 1st</span>
-                        <span class="badge bg-primary">Fullstack</span>
-                      </div>
-                      <h2 class="conference-name">DEVWorld</h2>
-                    </li>
-                
-                    <li class="list-group-item conference" data-category="backend">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">March 19th - March 23rd</span>
-                        <span class="badge bg-primary">Backend</span>
-                      </div>
-                      <h2 class="conference-name">SQLBits</h2>
-                    </li>
-                
-                    <li class="list-group-item conference" data-category="frontend">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">June 6th - June 7th</span>
-                        <span class="badge bg-primary">Frontend</span>
-                      </div>
-                      <h2 class="conference-name">CSS Day</h2>
-                    </li>
-                
-                    <li class="list-group-item conference" data-category="frontend">
-                      <div class="conference-details">
-                        <span class="badge bg-secondary">September 9th - September 11th</span>
-                        <span class="badge bg-primary">Frontend</span>
-                      </div>
-                      <h2 class="conference-name">SmashingConf Freiburg</h2>
-                    </li>
-                </ul>
+      <div class="container mt-4">
+        <h1 class="mb-4">Tech Conferences</h1>
+
+        <ul class="list-group conference-list">
+
+          <li class="list-group-item conference" data-category="fullstack">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="conference-details">
+                <span class="badge bg-secondary">January 30th - February 1st</span>
+                <span class="badge bg-primary">Fullstack</span>
               </div>
-          </div>
+              <h2 class="conference-name">THAT Conference Texas</h2>
+            </div>
+          </li>
+
+          <li class="list-group-item conference" data-category="fullstack">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="conference-details">
+                <span class="badge bg-secondary">February 29th - March 1st</span>
+                <span class="badge bg-primary">Fullstack</span>
+              </div>
+              <h2 class="conference-name">DEVWorld</h2>
+            </div>
+          </li>
+
+          <li class="list-group-item conference" data-category="backend">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="conference-details">
+                <span class="badge bg-secondary">March 19th - March 23rd</span>
+                <span class="badge bg-primary">Backend</span>
+              </div>
+              <h2 class="conference-name">SQLBits</h2>
+            </div>
+          </li>
+
+          <li class="list-group-item conference" data-category="frontend">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="conference-details">
+                <span class="badge bg-secondary">June 6th - June 7th</span>
+                <span class="badge bg-primary">Frontend</span>
+              </div>
+              <h2 class="conference-name">CSS Day</h2>
+            </div>
+          </li>
+
+          <li class="list-group-item conference" data-category="frontend">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="conference-details">
+                <span class="badge bg-secondary">September 9th - September 11th</span>
+                <span class="badge bg-primary">Frontend</span>
+              </div>
+              <h2 class="conference-name">SmashingConf Freiburg</h2>
+            </div>
+          </li>
+
+          <!-- =====================================================          ================================================== -->
+
+          <ul class="list-group conference-list">
+            <li class="list-group-item conference" data-category="fullstack">
+              <div class="conference-details">
+                <span class="badge bg-secondary">January 30th - February 1st</span>
+                <span class="badge bg-primary">Fullstack</span>
+              </div>
+              <h2 class="conference-name">THAT Conference Texas</h2>
+            </li>
+
+            <li class="list-group-item conference" data-category="fullstack">
+              <div class="conference-details">
+                <span class="badge bg-secondary">February 29th - March 1st</span>
+                <span class="badge bg-primary">Fullstack</span>
+              </div>
+              <h2 class="conference-name">DEVWorld</h2>
+            </li>
+
+            <li class="list-group-item conference" data-category="backend">
+              <div class="conference-details">
+                <span class="badge bg-secondary">March 19th - March 23rd</span>
+                <span class="badge bg-primary">Backend</span>
+              </div>
+              <h2 class="conference-name">SQLBits</h2>
+            </li>
+
+            <li class="list-group-item conference" data-category="frontend">
+              <div class="conference-details">
+                <span class="badge bg-secondary">June 6th - June 7th</span>
+                <span class="badge bg-primary">Frontend</span>
+              </div>
+              <h2 class="conference-name">CSS Day</h2>
+            </li>
+
+            <li class="list-group-item conference" data-category="frontend">
+              <div class="conference-details">
+                <span class="badge bg-secondary">September 9th - September 11th</span>
+                <span class="badge bg-primary">Frontend</span>
+              </div>
+              <h2 class="conference-name">SmashingConf Freiburg</h2>
+            </li>
+          </ul>
+      </div>
     </div>
+  </div>
 
-    <!-- Bootstrap JS and Popper.js (required for Bootstrap JS) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-    <script>
-        $(document).ready(function () {
-          const $filterButtons = $(".filter-btn");
-          const $conferences = $(".conference");
-      
-          $filterButtons.on("click", function () {
-            const filterCategory = $(this).data("filter");
-            
-            console.log('filterCategory = ', filterCategory )
+  <script>
+    $(document).ready(function () {
+      const $filterButtons = $(".filter-btn");
+      const $conferences = $(".conference");
 
-            updateActiveButton($(this));
-            filterEvents(filterCategory);
-          });
-      
-          function updateActiveButton(newButton) {
-            $(".filter-btn.active").removeClass("active");
-            newButton.addClass("active");
-          }
-      
-          function filterEvents(filter) {
-            $conferences.each(function () {
-              const eventCategory = $(this).data("category");
+      $filterButtons.on("click", function () {
+        const filterCategory = $(this).data("filter");
 
-              console.log('filter = ', filter )
-      
-              if (filter === "all" || filter === eventCategory) {
-                $(this).removeAttr("hidden");
-              } else {
-                $(this).attr("hidden", "hidden");
-              }
-            });
+        console.log('filterCategory = ', filterCategory)
+
+        updateActiveButton($(this));
+        filterEvents(filterCategory);
+      });
+
+      function updateActiveButton(newButton) {
+        $(".filter-btn.active").removeClass("active");
+        newButton.addClass("active");
+      }
+
+      function filterEvents(filter) {
+        $conferences.each(function () {
+          const eventCategory = $(this).data("category");
+
+          console.log('filter = ', filter)
+
+          if (filter === "all" || filter === eventCategory) {
+            $(this).removeAttr("hidden");
+          } else {
+            $(this).attr("hidden", "hidden");
           }
         });
-      </script>
+      }
+    });
+  </script>
 
 </body>
 
